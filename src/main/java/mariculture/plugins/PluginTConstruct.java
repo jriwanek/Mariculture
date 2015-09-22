@@ -95,7 +95,7 @@ public class PluginTConstruct extends Plugin {
         // >> Form Ingot and Block
         PluginTConstruct.addCasting("nuggetRutile", getFluidStack("rutile", MetalRates.NUGGET), 100);
         PluginTConstruct.addCasting("ingotRutile", getFluidStack("rutile", MetalRates.INGOT), 100);
-        PluginTConstruct.addCasting("nuggetRutile", getFluidStack("titanium", MetalRates.NUGGET), 100);
+        PluginTConstruct.addCasting("nuggetTitanium", getFluidStack("titanium", MetalRates.NUGGET), 100);
         PluginTConstruct.addCasting("ingotTitanium", getFluidStack("titanium", MetalRates.INGOT), 100);
         PluginTConstruct.addBlockCasting("blockTitanium", getFluidStack("titanium", MetalRates.BLOCK), 100);
         // Melt Down Magnesium
