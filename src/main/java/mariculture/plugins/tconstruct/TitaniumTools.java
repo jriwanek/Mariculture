@@ -79,6 +79,8 @@ public class TitaniumTools {
             }
         }
 
+        addMelting(800);
+
         addTools();
 
         int level = Loader.isModLoaded("IguanaTweaks") ? 5 : 4;
@@ -112,6 +114,31 @@ public class TitaniumTools {
         PluginTConstruct.addPartCasting(new ItemStack(hammer_head, 1, id), TConstructRegistry.getItemStack("hammerHeadCast"), fluid, delay);
         PluginTConstruct.addPartCasting(new ItemStack(full_guard, 1, id), TConstructRegistry.getItemStack("fullGuardCast"), fluid, delay);
         PluginTConstruct.addPartCasting(new ItemStack(arrowhead, 1, id), new ItemStack(TConstructRegistry.getItem("metalPattern"), 1, 25), fluid, delay);
+    }
+
+    public static void addMelting(int delay) {
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "tool_rod", getFluidStack("titanium", MetalRates.INGOT / 2), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "pickaxe_head", getFluidStack("titanium", MetalRates.INGOT), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "shovel_head", getFluidStack("titanium", MetalRates.INGOT), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "axe_head", getFluidStack("titanium", MetalRates.INGOT), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "sword_blade", getFluidStack("titanium", MetalRates.INGOT), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "large_guard", getFluidStack("titanium", MetalRates.INGOT / 2), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "hand_guard", getFluidStack("titanium", MetalRates.INGOT / 2), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "crossbar", getFluidStack("titanium", MetalRates.INGOT / 2), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "binding", getFluidStack("titanium", MetalRates.INGOT / 2), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "frypan_head", getFluidStack("titanium", MetalRates.INGOT), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "battle_sign_head", getFluidStack("titanium", MetalRates.INGOT), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "knife_blade", getFluidStack("titanium", MetalRates.INGOT / 2), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "chisel_head", getFluidStack("titanium", MetalRates.INGOT / 2), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "tough_rod", getFluidStack("titanium", MetalRates.INGOT * 3), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "tough_binding", getFluidStack("titanium", MetalRates.INGOT * 3, delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "large_plate", getFluidStack("titanium", MetalRates.INGOT * 8), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "broad_axe_head", getFluidStack("titanium", MetalRates.INGOT * 8), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "scythe_head", getFluidStack("titanium", MetalRates.INGOT * 8), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "excavator_head", getFluidStack("titanium", MetalRates.INGOT * 8), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "large_sword_blade", getFluidStack("titanium", MetalRates.INGOT * 8), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "hammer_head", getFluidStack("titanium", MetalRates.INGOT * 8), delay);
+        PluginTConstruct.addMelting(Core.metals, MetalMeta.TITANIUM_BLOCK, "full_guard", getFluidStack("titanium", MetalRates.INGOT * 3, delay);
     }
 
     public static void addTools() {
